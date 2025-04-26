@@ -1285,6 +1285,10 @@ footer {
     background: #e83e8c;
 }
 
+.skill-category:nth-child(7) .skill-tag {
+    background: #20c997;
+}
+
 .skill-category:nth-child(1) .skill-tag:hover {
     background: #0056b3;
 }
@@ -1307,6 +1311,10 @@ footer {
 
 .skill-category:nth-child(6) .skill-tag:hover {
     background: #c82333;
+}
+
+.skill-category:nth-child(7) .skill-tag:hover {
+    background: #138496;
 }
 
 .skill-category:nth-child(1) .skill-name {
@@ -1333,6 +1341,10 @@ footer {
     border-bottom-color: #e83e8c;
 }
 
+.skill-category:nth-child(7) .skill-name {
+    border-bottom-color: #20c997;
+}
+
 .skill-category:nth-child(1) .skill-icon {
     background: linear-gradient(135deg, #007bff, #0056b3);
 }
@@ -1355,4 +1367,8 @@ footer {
 
 .skill-category:nth-child(6) .skill-icon {
     background: linear-gradient(135deg, #e83e8c, #c82333);
+}
+
+.skill-category:nth-child(7) .skill-icon {
+    background: linear-gradient(135deg, #20c997, #138496);
 }
