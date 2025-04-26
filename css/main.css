@@ -604,7 +604,7 @@ img {
     font-size: 1.2rem;
     margin-bottom: 15px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px solid;
 }
 
 .skill-level {
@@ -640,21 +640,19 @@ img {
 
 .skill-tag {
     padding: 8px 16px;
-    background: #007bff;
     color: #ffffff;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
     transition: all 0.3s ease;
     border: none;
-    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .skill-tag:hover {
-    background: #0056b3;
-    color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .soft-skills {
@@ -1279,6 +1277,14 @@ footer {
     background: #6f42c1;
 }
 
+.skill-category:nth-child(5) .skill-tag {
+    background: #fd7e14;
+}
+
+.skill-category:nth-child(6) .skill-tag {
+    background: #e83e8c;
+}
+
 .skill-category:nth-child(1) .skill-tag:hover {
     background: #0056b3;
 }
@@ -1293,6 +1299,14 @@ footer {
 
 .skill-category:nth-child(4) .skill-tag:hover {
     background: #563d7c;
+}
+
+.skill-category:nth-child(5) .skill-tag:hover {
+    background: #d35400;
+}
+
+.skill-category:nth-child(6) .skill-tag:hover {
+    background: #c82333;
 }
 
 .skill-category:nth-child(1) .skill-name {
@@ -1311,6 +1325,14 @@ footer {
     border-bottom-color: #6f42c1;
 }
 
+.skill-category:nth-child(5) .skill-name {
+    border-bottom-color: #fd7e14;
+}
+
+.skill-category:nth-child(6) .skill-name {
+    border-bottom-color: #e83e8c;
+}
+
 .skill-category:nth-child(1) .skill-icon {
     background: linear-gradient(135deg, #007bff, #0056b3);
 }
@@ -1325,4 +1347,12 @@ footer {
 
 .skill-category:nth-child(4) .skill-icon {
     background: linear-gradient(135deg, #6f42c1, #563d7c);
+}
+
+.skill-category:nth-child(5) .skill-icon {
+    background: linear-gradient(135deg, #fd7e14, #d35400);
+}
+
+.skill-category:nth-child(6) .skill-icon {
+    background: linear-gradient(135deg, #e83e8c, #c82333);
 }
