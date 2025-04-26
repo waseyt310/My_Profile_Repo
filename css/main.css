@@ -1420,14 +1420,14 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(74, 108, 247, 0.05) 0%, rgba(74, 108, 247, 0) 100%);
+    background: linear-gradient(135deg, rgba(74, 108, 247, 0.03) 0%, rgba(74, 108, 247, 0) 100%);
     z-index: 0;
 }
 
 .awards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 2.5rem;
     margin-top: 3rem;
     position: relative;
     z-index: 1;
@@ -1435,31 +1435,39 @@ footer {
 
 .award-item {
     background: var(--card-bg);
-    border-radius: 20px;
+    border-radius: 24px;
     padding: 2.5rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
-    border: 1px solid rgba(74, 108, 247, 0.1);
+    border: 1px solid rgba(74, 108, 247, 0.08);
+    display: flex;
+    flex-direction: column;
 }
 
 .award-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
     border-color: var(--primary-color);
 }
 
+.award-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
 .award-icon {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background: linear-gradient(135deg, var(--primary-color), #64a1ff);
-    border-radius: 20px;
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
-    box-shadow: 0 10px 20px rgba(74, 108, 247, 0.2);
+    box-shadow: 0 10px 20px rgba(74, 108, 247, 0.15);
     transition: all 0.4s ease;
 }
 
@@ -1469,26 +1477,33 @@ footer {
 }
 
 .award-icon i {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
     transition: all 0.4s ease;
 }
 
 .award-badge {
     display: inline-block;
-    padding: 0.5rem 1rem;
-    background: rgba(74, 108, 247, 0.1);
+    padding: 0.5rem 1.2rem;
+    background: rgba(74, 108, 247, 0.08);
     color: var(--primary-color);
     border-radius: 50px;
     font-size: 0.9rem;
     font-weight: 600;
-    margin-bottom: 1rem;
     transition: all 0.3s ease;
+    border: 1px solid rgba(74, 108, 247, 0.1);
 }
 
 .award-item:hover .award-badge {
     background: var(--primary-color);
     color: white;
+    transform: translateY(-2px);
+}
+
+.award-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .award-content h3 {
@@ -1496,19 +1511,36 @@ footer {
     margin-bottom: 1rem;
     color: var(--text-color);
     line-height: 1.4;
+    font-weight: 600;
+}
+
+.award-meta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .award-company {
     color: var(--primary-color);
     font-weight: 600;
-    margin-bottom: 0.5rem;
     font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.award-company::before {
+    content: '\f0c1';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 0.9rem;
 }
 
 .award-date {
     color: var(--text-color-light);
     font-size: 0.95rem;
-    margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -1526,23 +1558,25 @@ footer {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
+    flex: 1;
 }
 
 .award-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1.5rem;
+    gap: 0.8rem;
+    margin-top: auto;
 }
 
 .award-tag {
-    padding: 0.4rem 1rem;
-    background: rgba(74, 108, 247, 0.1);
+    padding: 0.4rem 1.2rem;
+    background: rgba(74, 108, 247, 0.08);
     color: var(--primary-color);
     border-radius: 50px;
     font-size: 0.85rem;
     font-weight: 500;
     transition: all 0.3s ease;
+    border: 1px solid rgba(74, 108, 247, 0.1);
 }
 
 .award-tag:hover {
@@ -1577,9 +1611,16 @@ footer {
         padding: 2rem;
     }
     
-    .award-icon {
-        width: 60px;
-        height: 60px;
+    .award-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .award-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
     }
     
     .award-content h3 {
