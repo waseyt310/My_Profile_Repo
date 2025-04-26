@@ -1627,3 +1627,94 @@ footer {
         font-size: 1.2rem;
     }
 }
+
+/* Certifications Grid Styles */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.certification-item {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid rgba(74, 108, 247, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.certification-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.certification-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-color), #64a1ff);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.certification-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.certification-info {
+    flex: 1;
+}
+
+.certification-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    line-height: 1.4;
+}
+
+.certification-date {
+    font-size: 0.9rem;
+    color: var(--text-color-light);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.certification-date::before {
+    content: '\f073';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .certification-item {
+        padding: 1.2rem;
+    }
+    
+    .certification-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .certification-info h4 {
+        font-size: 1rem;
+    }
+}
