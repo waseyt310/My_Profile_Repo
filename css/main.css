@@ -312,15 +312,37 @@ img {
 .about-image {
     flex: 1;
     text-align: center;
+    position: relative;
 }
 
 .profile-img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto;
     border: 5px solid var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.about-image::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    opacity: 0.3;
+    z-index: -1;
 }
 
 .about-text {
@@ -1168,6 +1190,16 @@ footer {
     
     .soft-skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .profile-img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .about-image::after {
+        width: 270px;
+        height: 270px;
     }
 }
 
