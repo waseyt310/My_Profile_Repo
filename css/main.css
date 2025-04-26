@@ -634,18 +634,22 @@ img {
 }
 
 .skill-tag {
-    padding: 6px 12px;
-    background: rgba(0, 123, 255, 0.1);
+    padding: 8px 16px;
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(0, 188, 212, 0.1));
     color: #007bff;
     border-radius: 20px;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+    font-weight: 500;
     transition: all 0.3s ease;
+    border: 1px solid rgba(0, 123, 255, 0.2);
 }
 
 .skill-tag:hover {
-    background: #007bff;
+    background: linear-gradient(135deg, #007bff, #00bcd4);
     color: #ffffff;
     transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+    border-color: transparent;
 }
 
 .soft-skills {
