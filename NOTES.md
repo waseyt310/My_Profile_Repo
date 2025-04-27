@@ -132,6 +132,68 @@
    - Google Fonts
    - Custom CSS animations
 
+### Project Images
+1. **Data Extraction Projects**
+   - Location: assets/project-images/data-extraction-1.jpg
+   - Description: Screenshot of automated data extraction process
+   - Features shown:
+     - MySQL database integration
+     - DBeaver query interface
+     - PowerBI dashboard
+     - Data transformation workflow
+
+2. **Email Notification System**
+   - Location: assets/project-images/email-notification-1.jpg
+   - Description: Email notification system interface
+   - Features shown:
+     - Email template designer
+     - Notification triggers
+     - Recipient management
+     - Scheduling interface
+
+3. **Automation Projects**
+   - Location: assets/project-images/automation-1.jpg
+   - Description: RPA workflow automation
+   - Features shown:
+     - Automation Anywhere interface
+     - Process workflow diagram
+     - Bot execution metrics
+     - Task scheduling dashboard
+
+4. **Game Development**
+   - Location: assets/project-images/game-dev-1.jpg
+   - Description: Unity 3D game development
+   - Features shown:
+     - Game environment design
+     - Character models
+     - Physics engine implementation
+     - Gameplay mechanics
+
+5. **Hardware & Systems**
+   - Location: assets/project-images/hardware-1.jpg
+   - Description: System assembly and maintenance
+   - Features shown:
+     - Computer hardware assembly
+     - Driver installation interface
+     - System diagnostics
+     - Peripheral setup
+
+6. **Multimedia Projects**
+   - Location: assets/project-images/multimedia-1.jpg
+   - Description: Photoshop and video editing work
+   - Features shown:
+     - Photo editing workflow
+     - Video timeline in Capcut
+     - Graphics design samples
+     - Animation sequences
+
+### Image Guidelines
+- Resolution: 1920x1080 (Full HD)
+- Format: JPG for photographs, PNG for screenshots
+- File size: Optimize to < 500KB each
+- Style: Professional, clean, and demonstrative of technical capabilities
+- Branding: Include watermark where appropriate
+
 ### Contact Information
 - Email: waseytibrahim310@gmail.com
 - Phone: +639508948518
